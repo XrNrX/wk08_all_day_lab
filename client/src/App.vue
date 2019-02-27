@@ -2,7 +2,7 @@
   <div>
     <ul>
       <hotel-form></hotel-form>
-      <hotel-grid :bookings="bookings" :booking="booking"></hotel-grid>
+      <hotel-grid :bookings="bookings"></hotel-grid>
     </ul>
   </div>
 

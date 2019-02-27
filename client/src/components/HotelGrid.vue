@@ -1,12 +1,12 @@
 <template lang="html">
   <div>
 
-    <div v-for="booking in bookings">
+    <div id="customer-item" v-for="booking in bookings">
       <p> {{ booking.name }} </p>
       <p> {{ booking.email }} </p>
+      <button v-on:click="deleteBooking(booking._id)">Delete Booking</button>
     </div>
 
-    <button v-on:click="deleteBooking(booking._id)">Delete Booking</button>
 
   </div>
 
@@ -29,7 +29,18 @@ export default {
     }
   }
 }
-  </script>
+</script>
 
-  <style lang="css" scoped>
-  </style>
+<style lang="css" scoped>
+
+#customer-item {
+  border: black solid 4px;
+  border-radius: 20px;
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+
+
+}
+
+</style>
